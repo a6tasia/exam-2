@@ -1,0 +1,338 @@
+body {
+  font-family: Raleway;
+}
+
+.container {
+  padding: 10px 48px;
+}
+
+header .header-1 {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 48px;
+}
+header .header-1 nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+header .header-1 nav ul a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  color: #111111;
+  font-family: Raleway;
+}
+header .header-1 nav ul a:hover {
+  text-decoration: underline;
+}
+header .header-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 48px;
+}
+header .header-2 nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+header .header-2 nav ul a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #111111;
+  font-family: Raleway;
+}
+header .header-2 nav ul a:hover {
+  text-decoration: underline;
+  transition: 1s;
+}
+header .header-2 .searchandicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+header .header-2 .search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 100px;
+}
+header .header-2 .search-bar input {
+  padding: 8px 32px;
+  border: none;
+  background-color: #f5f5f5;
+  border-radius: 100px;
+  position: relative;
+  box-sizing: border-box;
+}
+header .header-2 .search-bar .search-btn {
+  position: absolute;
+  margin-left: 10px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.banner .banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner .banner-text h1 {
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0%;
+  color: #111111;
+  font-family: Raleway;
+  margin-top: 48px;
+}
+.banner .banner-text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #111111;
+  font-family: Raleway;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+.banner .banner-text .bannerbtn {
+  padding: 8px 24px;
+  border-radius: 100px;
+  background-color: #111111;
+  color: white;
+  cursor: pointer;
+}
+.banner .banner-text .bannerbtn:hover {
+  background-color: white;
+  color: #111111;
+  border: 1px solid #111111;
+}
+
+.newandsortby {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.newandsortby h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #111111;
+  font-family: roboto;
+}
+.newandsortby .filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  gap: 24px;
+}
+.newandsortby .sortby {
+  gap: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.newandsortby .sortby p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #111111;
+  font-family: roboto;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: none;
+}
+.sidebar .caregories {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  max-width: 260px;
+}
+.sidebar .caregories a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #111111;
+  font-family: roboto;
+  margin-bottom: 16px;
+}
+.sidebar .caregories a:hover {
+  color: #393846;
+}
+.sidebar #scrol {
+  width: 7px;
+  height: 329px;
+  border-radius: 100px;
+  background-color: #000000;
+  opacity: 50%;
+  margin-left: 8px;
+}
+
+footer {
+  background-color: #000000;
+}
+footer .footer {
+  padding: 40px 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+}
+footer .footer nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+}
+footer .footer li {
+  margin-bottom: 16px;
+}
+footer .footer a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: white;
+  font-family: Raleway;
+}
+footer .footer a:hover {
+  color: #393846;
+}
+footer .footer .socialmedia img {
+  margin-right: 12px;
+}
+footer .location {
+  padding: 0 48px 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: none;
+  gap: 16px;
+}
+footer .location h5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0%;
+  color: white;
+  font-family: Raleway;
+}
+footer .location p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0%;
+  color: #7e7e7e;
+  font-family: Raleway;
+}
+
+.banner2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.banner2 .banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner2 .banner-text h1 {
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0%;
+  color: #111111;
+  font-family: Raleway;
+  margin-top: 48px;
+}
+.banner2 .banner-text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #111111;
+  font-family: Raleway;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+.banner2 .banner-text .bannerbtn {
+  padding: 8px 24px;
+  border-radius: 100px;
+  background-color: #111111;
+  color: white;
+  cursor: pointer;
+}
+.banner2 .banner-text .bannerbtn:hover {
+  background-color: white;
+  color: #111111;
+  border: 1px solid #111111;
+}
+.banner2 .imgbanner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+.banner2 .imgbanner .parent {
+  position: relative;
+}
+.banner2 .imgbanner .parent .bannerbtn {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  font-size: 15px;
+  color: #111111;
+  padding: 8px 24px;
+  border-radius: 100px;
+  background-color: white;
+  cursor: pointer;
+}
+.banner2 .imgbanner .parent .bannerbtn:hover {
+  background-color: #111111;
+  color: white;
+  border: 1px solid #111111;
+}/*# sourceMappingURL=main.css.map */

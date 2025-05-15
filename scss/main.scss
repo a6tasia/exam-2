@@ -1,0 +1,300 @@
+@import "./mixins";
+@import "./variables";
+
+body {
+  font-family: $main-font;
+}
+.container {
+  padding: 10px 48px;
+}
+header {
+  //header1
+  .header-1 {
+    background-color: $headerbackground;
+    @include flex($direction: row, $justify: space-between, $align: center);
+    padding: 6px 48px;
+    nav {
+      ul {
+        @include flex($direction: row, $justify: center, $align: center);
+        gap: 12px;
+        a {
+          text-decoration: none;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: 0%;
+          color: $main-font-color;
+          font-family: $main-font;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  //header2
+  .header-2 {
+    @include flex($direction: row, $justify: space-between, $align: center);
+    padding: 16px 48px;
+    nav {
+      ul {
+        @include flex($direction: row, $justify: space-between, $align: center);
+        gap: 24px;
+        a {
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0%;
+          color: $main-font-color;
+          font-family: $main-font;
+          &:hover {
+            text-decoration: underline;
+            transition: 1s;
+          }
+        }
+      }
+    }
+    .searchandicons {
+      @include flex($direction: row, $justify: space-between, $align: center);
+      gap: 16px;
+    }
+    .search-bar {
+      @include flex($direction: row, $justify: none, $align: center);
+      background-color: $headerbackground;
+      border-radius: 100px;
+      input {
+        padding: 8px 32px;
+        border: none;
+        background-color: $headerbackground;
+        border-radius: 100px;
+        position: relative;
+        box-sizing: border-box;
+      }
+      .search-btn {
+        position: absolute;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+.banner {
+  @include flex($direction: column, $justify: center, $align: center);
+  margin-bottom: 48px;
+  .banner-text {
+    @include flex($direction: column, $justify: center, $align: center);
+    h1 {
+      font-size: 54px;
+      font-weight: 500;
+      line-height: 60px;
+      letter-spacing: 0%;
+      color: $main-font-color;
+      font-family: $main-font;
+      margin-top: 48px;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0%;
+      color: $main-font-color;
+      font-family: $main-font;
+      margin-top: 24px;
+      margin-bottom: 32px;
+    }
+    .bannerbtn {
+      @include btn(
+        $padding: 8px 24px,
+        $borderradius: 100px,
+        $backgroundcolor: $main-font-color
+      );
+      color: $btntext;
+      cursor: pointer;
+      &:hover {
+        background-color: $btntext;
+        color: $main-font-color;
+        border: 1px solid $main-font-color;
+      }
+    }
+  }
+}
+.newandsortby {
+  @include flex($direction: row, $justify: space-between, $align: center);
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: $main-font-color;
+    font-family: $secondfont;
+  }
+  .filter {
+    @include flex($direction: row, $justify: none, $align: center);
+    gap: 24px;
+  }
+  .sortby {
+    gap: 8px;
+    @include flex($direction: row, $justify: space-between, $align: center);
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0%;
+      color: $main-font-color;
+      font-family: $secondfont;
+    }
+  }
+}
+.sidebar {
+  @include flex($direction: row, $justify: none, $align: none);
+  .caregories {
+    margin-top: 16px;
+    @include flex($direction: column, $justify: none, $align: none);
+    // border-bottom: 1px solid $border;
+    max-width: 260px;
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0%;
+      color: $main-font-color;
+      font-family: $secondfont;
+      margin-bottom: 16px;
+      &:hover {
+        color: $pagenumber;
+      }
+    }
+  }
+  #scrol {
+    width: 7px;
+    height: 329px;
+    border-radius: 100px;
+    background-color: $scrol;
+    opacity: 50%;
+    margin-left: 8px;
+  }
+}
+//footer
+footer {
+  background-color: $scrol;
+  .footer {
+    padding: 40px 48px;
+    @include flex($direction: row, $justify: space-between, $align: none);
+
+    nav {
+      @include flex($direction: column, $justify: none, $align: none);
+    }
+    li {
+      margin-bottom: 16px;
+    }
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0%;
+      color: $btntext;
+      font-family: $main-font;
+
+      &:hover {
+        color: $pagenumber;
+      }
+    }
+    .socialmedia {
+      img {
+        margin-right: 12px;
+      }
+    }
+  }
+  .location {
+    padding: 0 48px 18px;
+    @include flex($direction: row, $justify: none, $align: none);
+    gap: 16px;
+    h5 {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0%;
+      color: $btntext;
+      font-family: $main-font;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0%;
+      color: $lightgrey;
+      font-family: $main-font;
+    }
+  }
+}
+//banner2
+.banner2 {
+  .banner-text {
+    @include flex($direction: column, $justify: center, $align: center);
+    h1 {
+      font-size: 54px;
+      font-weight: 500;
+      line-height: 60px;
+      letter-spacing: 0%;
+      color: $main-font-color;
+      font-family: $main-font;
+      margin-top: 48px;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0%;
+      color: $main-font-color;
+      font-family: $main-font;
+      margin-top: 24px;
+      margin-bottom: 32px;
+    }
+    .bannerbtn {
+      @include btn(
+        $padding: 8px 24px,
+        $borderradius: 100px,
+        $backgroundcolor: $main-font-color
+      );
+      color: $btntext;
+      cursor: pointer;
+      &:hover {
+        background-color: $btntext;
+        color: $main-font-color;
+        border: 1px solid $main-font-color;
+      }
+    }
+  }
+  @include flex($direction: column, $justify: none, $align: center);
+  margin-bottom: 48px;
+  .imgbanner {
+    @include flex($direction: row, $justify: center, $align: center);
+    gap: 12px;
+    margin-top: 16px;
+    .parent {
+      position: relative;
+
+      .bannerbtn {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        font-size: 15px;
+        color: $main-font-color;
+        @include btn(
+          $padding: 8px 24px,
+          $borderradius: 100px,
+          $backgroundcolor: $btntext
+        );
+
+        cursor: pointer;
+        &:hover {
+          background-color: $main-font-color;
+          color: $btntext;
+          border: 1px solid $main-font-color;
+        }
+      }
+    }
+  }
+}
