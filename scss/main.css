@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: Raleway;
 }
@@ -12,6 +13,7 @@ header .header-1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 6px 48px;
 }
 header .header-1 nav ul {
@@ -19,6 +21,7 @@ header .header-1 nav ul {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 12px;
 }
 header .header-1 nav ul a {
@@ -38,6 +41,7 @@ header .header-2 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 16px 48px;
 }
 header .header-2 nav ul {
@@ -45,6 +49,7 @@ header .header-2 nav ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 24px;
 }
 header .header-2 nav ul a {
@@ -65,6 +70,7 @@ header .header-2 .searchandicons {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
 }
 header .header-2 .search-bar {
@@ -72,6 +78,7 @@ header .header-2 .search-bar {
   flex-direction: row;
   justify-content: none;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #f5f5f5;
   border-radius: 100px;
 }
@@ -93,6 +100,7 @@ header .header-2 .search-bar .search-btn {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 48px;
 }
 .banner .banner-text {
@@ -100,6 +108,7 @@ header .header-2 .search-bar .search-btn {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .banner .banner-text h1 {
   font-size: 54px;
@@ -133,11 +142,25 @@ header .header-2 .search-bar .search-btn {
   border: 1px solid #111111;
 }
 
+.bannerbtn {
+  padding: 8px 24px;
+  border-radius: 100px;
+  background-color: #111111;
+  color: white;
+  cursor: pointer;
+}
+.bannerbtn:hover {
+  background-color: white;
+  color: #111111;
+  border: 1px solid #111111;
+}
+
 .newandsortby {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .newandsortby h2 {
   font-size: 24px;
@@ -152,6 +175,7 @@ header .header-2 .search-bar .search-btn {
   flex-direction: row;
   justify-content: none;
   align-items: center;
+  flex-wrap: wrap;
   gap: 24px;
 }
 .newandsortby .sortby {
@@ -160,6 +184,7 @@ header .header-2 .search-bar .search-btn {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .newandsortby .sortby p {
   font-size: 16px;
@@ -175,6 +200,7 @@ header .header-2 .search-bar .search-btn {
   flex-direction: row;
   justify-content: none;
   align-items: none;
+  flex-wrap: wrap;
 }
 .sidebar .caregories {
   margin-top: 16px;
@@ -182,7 +208,32 @@ header .header-2 .search-bar .search-btn {
   flex-direction: column;
   justify-content: none;
   align-items: none;
+  flex-wrap: wrap;
   max-width: 260px;
+}
+.sidebar .caregories p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #111111;
+  font-family: roboto;
+  margin-bottom: 16px;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 5px;
+}
+.sidebar .caregories .checkbox a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #111111;
+  font-family: roboto;
+  margin-bottom: 8px;
+}
+.sidebar .caregories .checkbox a:hover {
+  color: #393846;
 }
 .sidebar .caregories a {
   text-decoration: none;
@@ -215,12 +266,14 @@ footer .footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: none;
+  flex-wrap: wrap;
 }
 footer .footer nav {
   display: flex;
   flex-direction: column;
   justify-content: none;
   align-items: none;
+  flex-wrap: wrap;
 }
 footer .footer li {
   margin-bottom: 16px;
@@ -246,6 +299,7 @@ footer .location {
   flex-direction: row;
   justify-content: none;
   align-items: none;
+  flex-wrap: wrap;
   gap: 16px;
 }
 footer .location h5 {
@@ -270,6 +324,7 @@ footer .location p {
   flex-direction: column;
   justify-content: none;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 48px;
 }
 .banner2 .banner-text {
@@ -277,6 +332,7 @@ footer .location p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .banner2 .banner-text h1 {
   font-size: 54px;
@@ -314,6 +370,7 @@ footer .location p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 12px;
   margin-top: 16px;
 }
@@ -335,4 +392,128 @@ footer .location p {
   background-color: #111111;
   color: white;
   border: 1px solid #111111;
+}
+
+main .container .product {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 108px;
+  margin: 80px 0;
+}
+main .container h1 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #111111;
+  font-family: roboto;
+}
+main .container .text-div {
+  max-width: 376px;
+}
+main .container .text-div .detales {
+  padding: 0 16px 24px;
+}
+main .container .text-div .detales p {
+  margin: 0;
+}
+main .container .text-div p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #111111;
+  font-family: roboto;
+  margin: 32px 0;
+}
+main .container .text-div a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #111111;
+  font-family: roboto;
+  text-decoration: underline;
+}
+
+.cards-section {
+  display: flex;
+  flex-direction: start;
+  justify-content: space-between;
+  align-items: none;
+  flex-wrap: none;
+  margin-top: 24px;
+}
+
+#products {
+  display: flex;
+  flex-direction: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  margin: 0 auto;
+  max-width: 1161px;
+}
+#products .card {
+  width: 350px;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 4px;
+}
+#products .card h3 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #9e3500;
+  font-family: roboto;
+  margin-top: 8px;
+}
+#products .card p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #111111;
+  font-family: roboto;
+}
+#products .card span {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #111111;
+  font-family: roboto;
+}
+#products .card h2 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #111111;
+  font-family: roboto;
+}
+#products .card img {
+  width: 100%;
+  border-radius: 4px;
+}
+#products .card:hover {
+  cursor: pointer;
+  transform: translateY(5px);
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white; /* ან სხვა */
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=main.css.map */

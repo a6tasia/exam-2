@@ -51,13 +51,13 @@
             <li><a href="#">Women</a></li>
             <li><a href="#">Kids</a></li>
             <li><a href="#">Sale</a></li>
-            <li><a href="#">SNKRS</a></li>
+            <li><a href="./product.html">SNKRS</a></li>
           </ul>
         </nav>
 
         <div class="searchandicons">
           <div class="search-bar">
-            <input type="text" placeholder="search..." />
+            <input id="search" type="text" placeholder="search..." />
             <i class="bi bi-search search-btn"></i>
           </div>
           <i class="bi bi-heart"></i>
@@ -78,20 +78,23 @@
           <button class="bannerbtn">Find Your Shoe</button>
         </div>
       </div>
-      <section>
-        <div class="newandsortby">
-          <h2>New (500)</h2>
-          <div class="filter">
-            <div class="sortby">
-              <p>Hide Filters</p>
-              <img src="./images/filter.svg" alt="filter" />
-            </div>
-            <div class="sortby">
-              <p>Sort By</p>
-              <img src="./images/arrow.svg" alt="arrow" />
-            </div>
+    </main>
+    <!--newandsortby-->
+    <section class="container">
+      <div class="newandsortby">
+        <h2>New (500)</h2>
+        <div class="filter">
+          <div class="sortby">
+            <p>Hide Filters</p>
+            <img src="./images/filter.svg" alt="filter" />
+          </div>
+          <div class="sortby">
+            <p>Sort By</p>
+            <img src="./images/arrow.svg" alt="arrow" />
           </div>
         </div>
+      </div>
+      <div class="cards-section">
         <div class="sidebar">
           <div class="caregories">
             <a href="#">Shoes</a>
@@ -106,37 +109,80 @@
             <a href="#">Skirts & Dresses</a>
             <a href="#">Socks</a>
             <a href="#">Accessories & Equipment</a>
+            <p>Gender</p>
+            <div class="checkbox">
+              <input type="checkbox" id="myCheckbox" />
+              <a href="#">Men</a>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="myCheckbox" />
+              <a href="#">Women</a>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="myCheckbox" />
+              <a href="#">Unisex</a>
+            </div>
+            <p>Kids</p>
+            <div class="checkbox">
+              <input type="checkbox" id="myCheckbox" />
+              <a href="#">Boys</a>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="myCheckbox" />
+              <a href="#">Girls</a>
+            </div>
+
+            <p>Shop By Price</p>
+            <div class="checkbox">
+              <input type="checkbox" id="myCheckbox" />
+              <a href="#">Under ₹ 2 500.00</a>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="myCheckbox" />
+              <a href="#">₹ 2 501.00 - ₹ 7 500.00</a>
+            </div>
           </div>
           <div id="scrol"></div>
         </div>
-      </section>
-
-      <!--banner2-->
-      <div class="banner2">
-        <div class="banner-text">
-          <h1>FLIGHT ESSENTIALS</h1>
-          <p>
-            Your built-to-last, all-week wears—but with style only Jordan Brand
-            can deliver.
-          </p>
-          <button class="bannerbtn">Shop</button>
-        </div>
-        <div class="imgbanner">
-          <div class="parent">
-            <img src="./images/grey-clothes.jpg" alt="men's clothes" />
-            <button class="childe bannerbtn">men's</button>
-          </div>
-          <div class="parent">
-            <img src="./images/yellow-clothes.jpg" alt="women's clothes" />
-            <button class="childe bannerbtn">women's</button>
-          </div>
-          <div class="parent">
-            <img src="./images/kids.jpg" alt="kids'" />
-            <button class="childe bannerbtn">kids</button>
-          </div>
+        <!--CARDS SECTION-->
+        <div class="cardssection">
+          <div id="products"></div>
+          <button
+            style="margin-top: 48px"
+            class="bannerbtn"
+            id="showMoreBtn"
+            onclick="showMore( )"
+          >
+            Show More
+          </button>
         </div>
       </div>
-    </main>
+    </section>
+    <!--banner2-->
+    <div class="banner2 container">
+      <div class="banner-text">
+        <h1>FLIGHT ESSENTIALS</h1>
+        <p>
+          Your built-to-last, all-week wears—but with style only Jordan Brand
+          can deliver.
+        </p>
+        <button class="bannerbtn">Shop</button>
+      </div>
+      <div class="imgbanner">
+        <div class="parent">
+          <img src="./images/grey-clothes.jpg" alt="men's clothes" />
+          <button class="childe bannerbtn">men's</button>
+        </div>
+        <div class="parent">
+          <img src="./images/yellow-clothes.jpg" alt="women's clothes" />
+          <button class="childe bannerbtn">women's</button>
+        </div>
+        <div class="parent">
+          <img src="./images/kids.jpg" alt="kids'" />
+          <button class="childe bannerbtn">kids</button>
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="footer">
         <nav>
@@ -176,6 +222,6 @@
       </div>
     </footer>
     <!--JS-->
-    <script src="script.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
